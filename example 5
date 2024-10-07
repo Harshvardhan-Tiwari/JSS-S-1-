@@ -1,0 +1,30 @@
+#include <stdio.h>  // This includes the standard input/output library, which allows us to use functions like printf and scanf.
+
+void main()  // This defines the main function, the entry point of the program. It uses `void`, indicating that the function does not return a value.
+{
+    float a, b, temp;  // Here, we declare three floating-point variables: 'a' and 'b' for the values to be swapped, and 'temp' as a temporary placeholder for swapping.
+
+    // Take input from the user
+    printf("Enter two numbers: \n ");  // Here, we ask the user to enter two numbers, moving to a new line with '\n'.
+    
+    printf("Enter value of a:  ");  // Here, we ask the user to input a value for 'a'.
+    scanf("%f", &a);  // Here, the program reads the input provided by the user and stores it in the variable 'a'.
+
+    printf(" Enter value of b:  ");  // Here, we ask the user to input a value for 'b'.
+    scanf("%f", &b);  // Here, the program reads the input provided by the user and stores it in the variable 'b'.
+
+    // Display the values before swapping
+    printf("Value of a before swapping:  %.2f \n", a);  // Here, we display the value of 'a' entered by the user, formatted to two decimal places using '%.2f'.
+    printf("Value of b before swapping:  %.2f \n", b);  // Here, we display the value of 'b' entered by the user, formatted to two decimal places using '%.2f'.
+
+    // Swap the values using a third variable (temp)
+    temp = a;  // Here, we store the value of 'a' in the temporary variable 'temp' so that we can use it later without losing it.
+    a = b;  // Here, we assign the value of 'b' to 'a', effectively replacing 'a' with 'b's value.
+    b = temp;  // Here, we assign the value stored in 'temp' (which is the original value of 'a') to 'b', completing the swap.
+
+    // Display the values after swapping
+    printf("After swapping: \n");  // Here, we print a message to indicate that the swapping is complete and we will display the new values.
+    
+    printf("Value of a after swapping:  %.2f \n", a);  // Here, we display the new value of 'a' after the swap, formatted to two decimal places using '%.2f'.
+    printf("Value of b after swapping:  %.2f \n", b);  // Here, we display the new value of 'b' after the swap, formatted to two decimal places using '%.2f'.
+}
