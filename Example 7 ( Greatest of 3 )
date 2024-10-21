@@ -1,0 +1,29 @@
+#include <stdio.h>
+void main ()
+
+{
+float a,b,c;
+
+printf("enter Value of a : ");
+scanf("%f",&a);
+
+printf("enter Value of b : ");
+scanf("%f",&b);
+
+printf("enter Value of c : ");
+scanf("%f",&c);
+
+if (a>b && a>c)
+{
+printf("a is the gratest among the 3 nubers ");
+}
+else if (b>a && b>c)
+{
+ printf("a is the gratest among the 3 nubers ");
+}
+else
+{
+printf("c is the gratest among the 3 nubers ");
+}
+
+}
