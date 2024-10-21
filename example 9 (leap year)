@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <math.h>
+
+void main ()
+
+{
+
+int y;
+
+printf("Enter Year : ");
+scanf("%d",&y);
+
+if (y%400==0)
+{
+printf("The Year is a  LEAP YEAR ");
+}D
+
+else if (y%100==0)
+{
+printf("The Year is NOT A LEAP YEAR ");
+}
+
+else if (y%4==0)
+{
+printf("The Year is a LEAP YEAR ");
+}
+
+else
+{
+printf("The Year is NOT A LEAP YEAR ");    
+}
+
+
+}
