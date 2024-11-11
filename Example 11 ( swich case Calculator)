@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<math.h>
+
+void main ()
+
+{
+
+float a,b,result;
+char opration;
+
+printf("Enter the first number: ");
+scanf("%f", &a);
+
+printf("Enter the second number: ");
+scanf("%f", &b);
+
+printf("Enter the opration that you want to perform (+, -, *, /): ");
+scanf(" %c", &opration);
+
+
+switch (opration) 
+
+{
+  case '+': 
+    result = a + b;  // Perform addition and store the result.
+    printf("Result: %f\n", result);  // Display the result of the addition.
+    break;  // Exit the switch statement.
+
+  case '-':  // If the operator is '-'
+    result = a - b; 
+    printf("Result: %f\n", result); 
+    break;  
+
+  case '*':
+    result = a*b;
+    printf("Result: %f\n,result");
+    break;
+    
+  case '/':
+  {
+    if  (b == 0)
+    {
+       printf("Undefined please enter valid value of second number");
+    }
+    else
+    {
+     result = a / b;
+     printf("Result: %f\n,result");
+    }
+  }
+    break;
+}
+
+}
