@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<math.h>
+
+void main() {
+    float E, P, C, M, PE, sum, percentage;
+
+    // Prompt the user to enter marks for each subject
+    printf("Enter the marks scored in English: ");
+    scanf("%f", &E);
+
+    printf("Enter the marks scored in Physics: ");
+    scanf("%f", &P);
+
+    printf("Enter the marks scored in Chemistry: ");
+    scanf("%f", &C);
+
+    printf("Enter the marks scored in Mathematics: ");
+    scanf("%f", &M);
+
+    printf("Enter the marks scored in Physical Education: ");
+    scanf("%f", &PE);
+
+    sum = E + P + C + M + PE;
+    percentage = (sum / 500) * 100; 
+
+    printf("Total Marks = %f\n", sum);
+    printf("Percentage = %f\n", percentage);
+
+   
+    if (percentage >= 90) {
+        printf("Grade: A\n");
+    } else if (percentage >= 80) {
+        printf("Grade: B\n");
+    } else if (percentage >= 60) {
+        printf("Grade: C\n");
+    } else {
+        printf("Grade: D\n");
+    }
+}
