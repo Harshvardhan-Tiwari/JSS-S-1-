@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+
+ int n;
+
+ printf("Enter a Positive Integer:");
+ scanf("%d",&n);
+
+  if(n<2)
+   {
+    printf("%d is NOT a Prime Number ",n);
+   }
+ 
+  else
+    {
+      for (int i=2 ; i<n ; i++)
+         {
+           if(n%i==0)
+           {
+            printf("%d is NOT a Prime Number ",n);
+            goto exit;
+           }
+         }
+      printf("%d is a Prime Number",n);
+    }
+
+ exit:
+  return 0;
+}
