@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+
+ int i=0,b=0,d=0,r,B,D;
+ char converstion;
+
+ printf("Choose Converstion \n 1. Binery to Decimal \n 2. Decimal to Binery");
+ printf("\nEnter Your Convertion (1 or 2): ");
+ scanf(" %c",&converstion);
+
+  switch (converstion)
+    { 
+      case '1': // Binery to Decimal 
+
+        printf("\nEnter a Binery Number: ");
+        scanf("%d",&b);
+        
+         B=b;
+
+        while(b!=0)
+           {
+             r=b%10;
+             d=d+(r*pow(2,i));
+             b=b/10;
+            i=i+1;
+           }
+        printf("\n %d in Decimal is %d",B,d);  
+        break;
+
+
+      case '2': // Decimal to Binery
+
+        printf("\nEnter a Decimal Number: ");
+        scanf("%d",&d);
+        
+        D=d;
+        int place=1;
+
+        while(d!=0)  
+           {
+            r=d%2;
+            b=b+(r*place);
+            place=place*10;
+            d=d/2;
+           }
+           printf("\n%d in Binery is %d",D,b);
+        break;
+
+        default:
+        printf("\n\nPlease Enter a Valid Input");
+        break;
+   }
+}
