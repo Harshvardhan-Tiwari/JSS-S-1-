@@ -1,0 +1,46 @@
+#include<stdio.h>
+int main()
+{
+
+ int n,m,sum1=0,sum2=0;
+
+ printf("Enter the number of Elements in First Array: ");
+ scanf("%d",&n);
+
+ int arr1[n];
+
+ printf("\nEnter the elements of the First Array:\n ");
+
+  for(int i=0 ; i<n ; i++)
+    {
+      printf("\nEnter the value of %d element: ",i);
+      scanf("%d",&arr1[i]);
+    }
+
+
+  printf("\n\nEnter the number of Elements in Second Array: ");
+  scanf("%d",&m);
+
+  int arr2[m];
+
+  printf("\nEnter the elements of the Second Array:\n ");
+
+  for (int j=0 ; j<m ; j++)
+    {
+      printf("\nEnter the value of %d element: ",j);
+      scanf("%d",&arr2[j]);
+    }
+
+   for(int k=0; k<n ; k++) 
+   {
+    sum1=sum1+arr1[k];
+   }
+
+   for(int l=0; l<m ; l++)
+   {
+    sum2=sum2+arr2[l];
+   }
+
+  int arr3[]={sum1,sum2};
+  printf("\n\nThe sum of Elements of First and Second Array are: %d, %d",arr3[0],arr3[1]);
+}
